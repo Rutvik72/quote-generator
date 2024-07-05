@@ -1,9 +1,20 @@
+import React, {useState} from 'react'
+
 import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-import { GradientBackgroundCon } from "@/components/QuoteGenerator/QuoteGeneratorElements";
+
+//Components
+import { BackgroundImage1, BackgroundImage2, FootCon, GradientBackgroundCon } from "@/components/QuoteGenerator/QuoteGeneratorElements";
+
+
+//Assets
+import Clouds1 from '@/assets/Clouds1.png'
+import Clouds2 from '@/assets/Clouds2.png'
 
 export default function Home() {
+  const [numberOfQuotes, setNumberOfQuotes] = useState<Number | null>(0);
+
   return (
     <>
       <Head>
@@ -14,6 +25,24 @@ export default function Home() {
       </Head>
       {/* Background */}
       <GradientBackgroundCon>
+        <BackgroundImage1
+          src = {Clouds1}
+          height="300"
+          alt="cloudybackground1"
+        />
+        <BackgroundImage2
+          src = {Clouds2}
+          height="300"
+          alt="cloudybackground2"
+        />
+
+        <FootCon>
+          <>
+            Quotes Generated: {numberOfQuotes}
+            <br/>
+            Developed by Rutvik
+          </>
+        </FootCon>
 
       </GradientBackgroundCon>
     </>
