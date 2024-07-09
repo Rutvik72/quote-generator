@@ -5,8 +5,7 @@ import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 
 //Components
-import { BackgroundImage1, BackgroundImage2, FootCon, GradientBackgroundCon } from "@/components/QuoteGenerator/QuoteGeneratorElements";
-
+import { BackgroundImage1, BackgroundImage2, FootCon, GeneratorQuoteButton, GeneratorQuoteButtonText, GradientBackgroundCon, QuoteGeneratorCon, QuoteGeneratorInnerCon, QuoteGeneratorSubTitle, QuoteGeneratorTitle } from "@/components/QuoteGenerator/QuoteGeneratorElements";
 
 //Assets
 import Clouds1 from '@/assets/Clouds1.png'
@@ -25,6 +24,31 @@ export default function Home() {
       </Head>
       {/* Background */}
       <GradientBackgroundCon>
+
+        {/* Quote Generator Modal Pop up */}
+        {/* <QuoteGeneratorModal/> */}
+
+        {/* Quote Generator */}
+        <QuoteGeneratorCon>
+          <QuoteGeneratorInnerCon>
+            <QuoteGeneratorTitle>
+              Quote Generator
+            </QuoteGeneratorTitle>
+
+            <QuoteGeneratorSubTitle>
+              Generator cool quotes
+            </QuoteGeneratorSubTitle>
+
+            <GeneratorQuoteButton>
+              <GeneratorQuoteButtonText onClick={null}>
+                Make Quote
+              </GeneratorQuoteButtonText>
+            </GeneratorQuoteButton>
+            
+          </QuoteGeneratorInnerCon>
+        </QuoteGeneratorCon>
+
+        {/* Background Images */}
         <BackgroundImage1
           src = {Clouds1}
           height="300"
