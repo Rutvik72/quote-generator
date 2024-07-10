@@ -27,11 +27,7 @@ type Query {
 type QuoteAppData
   @model
   @auth(rules: [
-    { 
-      allow: public,
-      provider: iam,
-      operations: [read]
-    },
+    { allow: public, provider: iam, operations: [read] },
   ])
   {
     id: ID!
