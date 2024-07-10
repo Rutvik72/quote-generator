@@ -10,6 +10,20 @@
       "StackName": "amplify-quotegen-dev-719ba",
       "StackId": "arn:aws:cloudformation:us-east-1:851725476852:stack/amplify-quotegen-dev-719ba/bb599e80-3d52-11ef-a185-0ebd25ef6105",
       "AmplifyAppId": "d3cegiiwkwth0l"
+    },
+    "categories": {
+      "auth": {
+        "quotegen6d393507": {}
+      },
+      "function": {
+        "quotegenLambda": {
+          "deploymentBucketName": "amplify-quotegen-dev-719ba-deployment",
+          "s3Key": "amplify-builds/quotegenLambda-714947544f7138397164-build.zip"
+        }
+      },
+      "api": {
+        "quotegen": {}
+      }
     }
   }
 }
