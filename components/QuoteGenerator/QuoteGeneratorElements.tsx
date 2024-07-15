@@ -88,7 +88,7 @@ export const QuoteGeneratorTitle = styled.div`
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     color: white;
-    padding: 0px 20px 0px 20px;
+    padding: 20px 20px 20px 20px;
     position: relative;
     /* media query for mobile */
     @media only screen and (max-width: 600px) {
