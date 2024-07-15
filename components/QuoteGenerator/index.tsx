@@ -106,7 +106,6 @@ const QuoteGeneratorModal = ({
                                     <ImageBlob
                                         quoteReceived={quoteReceived}
                                         blobUrl={blobUrl}
-
                                     />
                                 </ImageBlobCon>
 
