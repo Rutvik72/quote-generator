@@ -77,7 +77,7 @@ export const DownloadQuoteCardConText = styled.div`
     position: relative;
     width: 100%;
     text-align: center;
-    padding: 10px 10px 20px 20px;
+    /* padding: 10px 10px 20px 20px; */
     margin-top: -60px;
     margin-bottom: 10px;
     pointer-events: none;
