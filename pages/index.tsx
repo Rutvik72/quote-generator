@@ -6,7 +6,7 @@ import styles from "@/styles/Home.module.css";
 
 
 //Components
-import { BackgroundImage1, BackgroundImage2, FootCon, GeneratorQuoteButton, GeneratorQuoteButtonText, GradientBackgroundCon, QuoteGeneratorCon, QuoteGeneratorInnerCon, QuoteGeneratorModalCon, QuoteGeneratorSubTitle, QuoteGeneratorTitle } from "@/components/QuoteGenerator/QuoteGeneratorElements";
+import { BackgroundImage1, BackgroundImage2, FootCon, FooterLink, GeneratorQuoteButton, GeneratorQuoteButtonText, GradientBackgroundCon, QuoteGeneratorCon, QuoteGeneratorInnerCon, QuoteGeneratorModalCon, QuoteGeneratorSubTitle, QuoteGeneratorTitle } from "@/components/QuoteGenerator/QuoteGeneratorElements";
 
 //Assets
 import Clouds1 from '@/assets/Clouds1.png'
@@ -90,7 +90,7 @@ export default function Home() {
   const handleCloseGenerator = () => {
     setOpenGenerator(false);
     setProcessingQuote(false);
-    setQuoteReceived(null);
+    setQuoteReceived(null); 
   }
 
   const handleOpenGenerator = async(e: React.SyntheticEvent) => {
@@ -162,7 +162,7 @@ export default function Home() {
             </QuoteGeneratorTitle>
 
             <QuoteGeneratorSubTitle>
-              Generator cool quotes
+              Cool Quote Generator Using <FooterLink href="https://zenquotes.io/" target="_blank" rel="noopener noreferrer">ZenQuotes API</FooterLink>.
             </QuoteGeneratorSubTitle>
 
             <GeneratorQuoteButton onClick={handleOpenGenerator} >
