@@ -102,7 +102,7 @@ export const QuoteGeneratorSubTitle = styled.div`
     text-align: center;
     color: white;
     width: 100%;
-    padding: 0px 20px 0px 20px;
+    padding: 10px 10px 10px 10px;
     position: relative;
     /* media query for mobile */
     @media only screen and (max-width: 600px) {
