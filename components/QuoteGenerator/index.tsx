@@ -96,7 +96,7 @@ const QuoteGeneratorModal = ({
                         {quoteReceived !== null && 
                             <>
                                 <QuoteGeneratorTitle>
-                                    Download your quote
+                                    Download your quote!
                                 </QuoteGeneratorTitle>
                                 <QuoteGeneratorSubTitle style={{marginTop: "20px"}}>
                                     See a preview
